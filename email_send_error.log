@@ -1,0 +1,200 @@
+--- 2025-11-25T07:22:47.059631 ---
+Recipients: ['manohars12081@gmail.com']
+Subject: Registration confirmation
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 188, in send
+    self.host.sendmail(sanitize_address(envelope_from or message.sender),
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       list(sanitize_addresses(message.send_to)),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.as_bytes() if PY3 else message.as_string(),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.mail_options,
+                       ^^^^^^^^^^^^^^^^^^^^^
+                       message.rcpt_options)
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (553, b'Relaying disallowed as no-reply@yourdomain.com')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\utils\email_service.py", line 19, in _send_async_email
+    mail.send(msg)
+    ~~~~~~~~~^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+         ~~~~~~~~~~~~^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 993, in quit
+    res = self.docmd("quit")
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+    ~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+
+--- 2025-11-25T07:22:47.085417 ---
+Recipients: ['connect@globalmindsindia.com']
+Subject: New user registration
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 188, in send
+    self.host.sendmail(sanitize_address(envelope_from or message.sender),
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       list(sanitize_addresses(message.send_to)),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.as_bytes() if PY3 else message.as_string(),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.mail_options,
+                       ^^^^^^^^^^^^^^^^^^^^^
+                       message.rcpt_options)
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (553, b'Relaying disallowed as no-reply@yourdomain.com')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\utils\email_service.py", line 19, in _send_async_email
+    mail.send(msg)
+    ~~~~~~~~~^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+         ~~~~~~~~~~~~^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 993, in quit
+    res = self.docmd("quit")
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+    ~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+
+--- 2025-11-25T07:23:09.953745 ---
+Recipients: ['connect@globalmindsindia.com']
+Subject: New user registration
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 188, in send
+    self.host.sendmail(sanitize_address(envelope_from or message.sender),
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       list(sanitize_addresses(message.send_to)),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.as_bytes() if PY3 else message.as_string(),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.mail_options,
+                       ^^^^^^^^^^^^^^^^^^^^^
+                       message.rcpt_options)
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (553, b'Relaying disallowed as no-reply@yourdomain.com')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\utils\email_service.py", line 19, in _send_async_email
+    mail.send(msg)
+    ~~~~~~~~~^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+         ~~~~~~~~~~~~^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 993, in quit
+    res = self.docmd("quit")
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+    ~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+
+--- 2025-11-25T07:23:09.997794 ---
+Recipients: ['manohar.s@globalmindsindia.com']
+Subject: Registration confirmation
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 492, in send
+    message.send(connection)
+    ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 427, in send
+    connection.send(self)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 188, in send
+    self.host.sendmail(sanitize_address(envelope_from or message.sender),
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       list(sanitize_addresses(message.send_to)),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.as_bytes() if PY3 else message.as_string(),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       message.mail_options,
+                       ^^^^^^^^^^^^^^^^^^^^^
+                       message.rcpt_options)
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 897, in sendmail
+    raise SMTPDataError(code, resp)
+smtplib.SMTPDataError: (553, b'Relaying disallowed as no-reply@yourdomain.com')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GEP\gep-server\utils\email_service.py", line 19, in _send_async_email
+    mail.send(msg)
+    ~~~~~~~~~^^^^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 491, in send
+    with self.connect() as connection:
+         ~~~~~~~~~~~~^^
+  File "D:\GEP\gep-server\venv\Lib\site-packages\flask_mail.py", line 152, in __exit__
+    self.host.quit()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 993, in quit
+    res = self.docmd("quit")
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 431, in docmd
+    self.putcmd(cmd, args)
+    ~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 378, in putcmd
+    self.send(f'{s}{CRLF}')
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python313\Lib\smtplib.py", line 365, in send
+    raise SMTPServerDisconnected('please run connect() first')
+smtplib.SMTPServerDisconnected: please run connect() first
+
+
