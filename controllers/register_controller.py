@@ -73,6 +73,9 @@ def save_user(payload: dict):
         session.commit()
         session.refresh(user)
         return user, True
+    except Exception:
+        session.rollback()
+        raise
     finally:
         session.close()
 

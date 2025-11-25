@@ -1,5 +1,6 @@
 # app.py
 from flask import Flask, jsonify
+from sqlalchemy import text
 from config.config import Config
 from db.database import init_db, auto_migrate
 from utils.email_service import init_mail
@@ -45,6 +46,20 @@ def create_app():
     @app.route("/", methods=["GET"])
     def health():
         return jsonify({"status": "ok"})
+
+    @app.route("/health/db", methods=["GET"])
+    def health_db():
+        """Simple DB health check endpoint.
+        Returns 200 if DB is reachable and a basic select 1 works, otherwise returns 503.
+        """
+        from db.database import engine
+        try:
+            with engine.connect() as conn:
+                conn.execute(text("SELECT 1"))
+            return jsonify({"db": "ok"})
+        except Exception as e:
+            app.logger.exception("DB health check failed: %s", e)
+            return jsonify({"db": "error", "error": str(e)}), 503
 
     return app
 

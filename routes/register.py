@@ -17,12 +17,16 @@ def register():
         return jsonify({"detail": "Invalid JSON"}), 400
 
     try:
+        current_app.logger.debug("Processing registration payload: %s", payload)
         result = process_registration(payload, current_app)
     except ValidationError as ve:
         # Return pydantic validation errors in a simple format
         return jsonify({"detail": ve.errors()}), 422
     except Exception as e:
-        current_app.logger.exception("Registration failed")
+        # Log full exception with traceback; also include the exception string for better debugging
+        current_app.logger.exception("Registration failed: %s", e)
+        if current_app.config.get("DEBUG"):
+            return jsonify({"detail": "Registration failed", "error": str(e)}), 500
         return jsonify({"detail": "Registration failed"}), 500
 
     # If created_new is False -> duplicate email
