@@ -127,7 +127,7 @@ def process_registration(payload: dict, flask_app):
         "Thank you for registering for the Global Education Partner (GEP) Programme with Global Minds India!\n"
         "Your registration has been received successfully.\n\n"
         "Our team will get in touch with you shortly to explain how the programme works, the benefits, and how you can begin your journey as a GEP Partner.\n\n"
-        "If you have any immediate questions, feel free to reach out.\n\n"
+        "If you have any questions, feel free to reach out.\n\n"
         "Warm regards,\n"
         "Global Minds India Team\n"
         "📞 +91 73534 46655\n"
