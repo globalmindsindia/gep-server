@@ -160,7 +160,6 @@ def process_registration(payload: dict, flask_app):
         f"Name: {name}\n"
         f"Phone: {mobile or '-'}\n"
         f"Email: {email}\n"
-        f"City: {city or '-'}\n\n"
         "Action Required:\n"
         "👉 Please contact the user and provide full details about the programme.\n"
         "👉 Assist them with onboarding and next steps.\n\n"
