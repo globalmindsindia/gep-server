@@ -176,7 +176,6 @@ def process_registration(payload: dict, flask_app):
         <tr><td><strong>Name:</strong></td><td>{esc(name)}</td></tr>
         <tr><td><strong>Phone:</strong></td><td>{esc(mobile or '-')}</td></tr>
         <tr><td><strong>Email:</strong></td><td><a href="mailto:{esc(email)}">{esc(email)}</a></td></tr>
-        <tr><td><strong>City:</strong></td><td>{esc(city or '-')}</td></tr>
       </table>
       <h4>Action Required:</h4>
       <ul>
